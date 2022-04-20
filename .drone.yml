@@ -111,7 +111,7 @@ steps:
 
 - name: upload-artifacts
   failure: ignore
-  image: rancher/drone-images:github-release-s390x
+  image: luistt/drone-images:v0.0.1-docker-s390x
   settings:
     api_key:
       from_secret: github_token
