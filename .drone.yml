@@ -102,7 +102,7 @@ node:
 steps:
 - name: build
   failure: ignore
-  image: rancher/dapper:v0.5.8
+  image: luistt/drone-images:v0.0.1-docker-s390x
   commands:
   - dapper ci
   volumes:
@@ -111,7 +111,7 @@ steps:
 
 - name: upload-artifacts
   failure: ignore
-  image: luistt/drone-images:v0.0.1-docker-s390x
+  image: rancher/drone-images:github-release-s390x
   settings:
     api_key:
       from_secret: github_token
